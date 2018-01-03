@@ -100,7 +100,7 @@ a:hover {
   color: #4636FF;
 }
 
-#section0 a {
+#scroll-1 a, #scroll-2 a {
   border-bottom: none;
   display: block;
   padding: 24px 0;
@@ -154,6 +154,6 @@ a:hover {
   }
   h1 {
     font-size: 48px;
-    line-height: 124px;
+    line-height: 64px;
   }
 }
