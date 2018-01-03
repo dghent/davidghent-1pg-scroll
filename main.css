@@ -1,0 +1,159 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body {
+  font-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-feature-settings: "kern", "liga", "frac", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "frac", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "frac", "pnum";
+  font-feature-settings: "kern", "liga", "frac", "pnum";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#section0 {
+  color: #052123;
+}
+
+#section1 {
+  color: #FFF;
+}
+
+#section2 {
+  color: #052123;
+}
+
+#section3 {
+  color: #052123;
+}
+
+#section4 {
+  color: #052123;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+p {
+  color: #B6CAD6;
+  padding: 24px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0BA2FB;
+  border-bottom: 1px solid #000;
+}
+a:active, a:focus {
+  border-color: #9fb5c2;
+  outline: none;
+}
+
+a:hover {
+  color: #4636FF;
+}
+
+#section0 a {
+  border-bottom: none;
+  display: block;
+  padding: 24px 0;
+}
+
+#overlay {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+    cursor: pointer;
+    background-image: url("img/brands.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-block {
+    margin-left: 40px;
+    width: 80%;
+  }
+  h1 {
+    font-size: 96px;
+    line-height: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .text-block {
+    margin-left: 40px;
+    width: 80%;
+  }
+  h1 {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text-block {
+    margin-left: 40px;
+    width: 80%;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 124px;
+  }
+}

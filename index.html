@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="main.css"/>
+	<title>David Ghent, Digital Product Designer</title>
+</head>
+
+
+<meta name="author" content="Alvaro Trigo Lopez" />
+<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+<meta name="keywords"  content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+<meta name="Resource-type" content="Document" />
+
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="examples.css" />
+
+<!--[if IE]>
+	<script type="text/javascript">
+		 var console = { log: function() {} };
+	</script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<!-- <script type="text/javascript" src="../vendors/scrolloverflow.js"></script> -->
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<!-- <script type="text/javascript" src="examples.js"></script> -->
+
+<script type="text/javascript">
+	// scroll
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			anchors: ['DavidGhent', 'About', 'Work'],
+			sectionsColor: ['#FFF', '#334054', '#9EF7E3', '#FFEFDE', '#FFD9DD'],
+			scrollBar: true
+		});
+	});
+
+	// overlay
+	function overlayOn() {
+	    document.getElementById("overlay").style.visibility = "visible";
+			document.getElementById("overlay").style.opacity = "1";
+	}
+
+	function overlayOff() {
+		document.getElementById("overlay").style.visibility = "hidden";
+		document.getElementById("overlay").style.opacity = "0";
+	}
+
+</script>
+
+</head>
+<body>
+
+<div id="overlay" onclick="overlayOff()"></div>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="text-block">
+			<h1>I'm David,<br/>
+				a digital product designer who's been creating experiences since 2008.</h1>
+				<a href="#About">scroll &#8595;</a>
+		</div>
+	</div>
+	<div class="section" id="section1">
+			<div class="slide">
+			<div class="text-block">
+			<h1>I’ve contributed to a lot of different <a href="https://www.behance.net/davidghent" target="_blank">products</a> for a variety of <a href="#About" onclick="overlayOn()">brands</a> in different industries.</h1>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+			<div class="slide">
+			<div class="text-block">
+			<h1>I'm lucky to have worked in 3 countries for 5 different <a href="https://www.linkedin.com/in/davidghent/" target="_blank">companies</a> with countless engineers and product people.</h1>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="text-block">
+			<h1>Here's a recent case study on <a href="#" target="_blank">Medium</a>, some individual shots on <a href="https://dribbble.com/daveghent" target="_blank">Dribbble</a>, or some past work on <a href="https://www.behance.net/davidghent" target="_blank">Behance</a>.
+			</h1>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="text-block">
+			<h1>I also have opinions about <a href="#">research process</a>, balancing <a href="#">agile+visual</a> and <a href="#">pair design</a>.
+			</h1>
+		</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="text-block">
+			<h1>And remember - don't be shy and <a href="mailto:david@ghent.design">say hi</a> if you'd like to know more.
+			</h1>
+		</div>
+	</div>
+</div><!-- emd full[age -->
+
+
+</body>
+</html>
