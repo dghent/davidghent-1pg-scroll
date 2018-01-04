@@ -33,23 +33,11 @@
 	// scroll
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
-			anchors: ['DavidGhent', 'About', 'Opportunities', 'Work', 'Writing', 'SayHello'],
-			sectionsColor: ['#FFF', '#334054', '#9EF7E3', '#FFEFDE', '#FFD9DD'],
+			anchors: ['DavidGhent', 'About', 'Work', 'Writing', 'SayHello'],
+			sectionsColor: ['#FFF', '#334054', '#9EF7E3', '#FFEFDE'],
 			scrollBar: true
 		});
 	});
-
-	// overlay
-	function overlayOn() {
-	    document.getElementById("overlay").style.visibility = "visible";
-			document.getElementById("overlay").style.opacity = "1";
-	}
-
-	function overlayOff() {
-		document.getElementById("overlay").style.visibility = "hidden";
-		document.getElementById("overlay").style.opacity = "0";
-	}
-
 </script>
 
 </head>
@@ -60,41 +48,39 @@
 	<div class="section" id="section0">
 		<div class="text-block">
 			<h1>I'm David,<br/>
-				a digital product designer who's been creating experiences since 2008.</h1>
-				<span id="scroll-1"><a href="#About">scroll &#8595;</a></span>
+				a digital product designer currently working in <span class="strikethrough">Toronto</span> <span class="strikethrough">Berlin</span> San Francisco.</h1>
+				<span id="scroll-1"><a href="#About">SCROLL &#8595;</a></span>
 		</div>
 	</div>
 	<div class="section" id="section1">
 			<div class="slide">
 			<div class="text-block">
-			<h1>I’ve contributed to a lot of different <a href="https://www.behance.net/davidghent" target="_blank">products</a> for a variety of <a href="#About" onclick="overlayOn()">brands</a> in different industries.</h1>
+			<h1>I believe in a strong focus on user centric empathy, and obsess over interaction and visual design.</h1>
+			<span id="scroll-2"><a href="#Work">MY WORK &#8595;</a></span>
 			</div>
 		</div>
 	</div>
 	<div class="section" id="section2">
-			<div class="slide">
-			<div class="text-block">
-			<h1>I'm lucky to have worked in 3 countries for 5 different <a href="https://www.linkedin.com/in/davidghent/" target="_blank">companies</a> with countless engineers and product people.</h1>
-			</div>
+		<div class="text-block">
+			<h1>Here's a <a href="#" target="_blank">recent case study</a> on Medium, some individual shots on <a href="https://dribbble.com/daveghent" target="_blank">Dribbble</a>, and some past work on <a href="https://www.behance.net/davidghent" target="_blank">Behance</a>.
+			</h1>
+				<span id="scroll-3"><a href="#Writing">WRITING &#8595;</a></span>
 		</div>
 	</div>
 	<div class="section" id="section3">
 		<div class="text-block">
-			<h1>Here's a recent case study on <a href="#" target="_blank">Medium</a>, some individual shots on <a href="https://dribbble.com/daveghent" target="_blank">Dribbble</a>, or some past work on <a href="https://www.behance.net/davidghent" target="_blank">Behance</a>.
+			<h1>I also have opinions about <a href="https://builttoadapt.io/using-trello-for-user-research-synthesis-fb1abdfc7c4b" target="_blank">research process</a>, balancing <a href="https://medium.com/product-labs/3-tips-for-better-visual-design-on-an-agile-team-ae4a2a712914" target="_blank">agile+visual</a> and <a href="https://builttoadapt.io/5-tips-to-help-you-design-faster-in-sketch-a9db54d10a72" target="_blank">iterating faster</a>.
 			</h1>
+			<span id="scroll-4"><a href="#SayHello">CONNECT &#8595;</a></span>
 		</div>
 	</div>
 	<div class="section" id="section4">
 		<div class="text-block">
-			<h1>I also have opinions about <a href="#">research process</a>, balancing <a href="#">agile+visual</a> and <a href="#">pair design</a>.
-			</h1>
-		</div>
-	</div>
-	<div class="section" id="section5">
-		<div class="text-block">
 			<h1>And remember - don't be shy and <a href="mailto:david@ghent.design">say hi</a> if you'd like to know more.
 			</h1>
-			<span id="scroll-2"><a href="#Writing">scroll up &#8593;</a></span>
+			<div id="end-links">
+				<a href="https://www.linkedin.com/in/davidghent/" target="_blank">LINKEDIN</a>, <a href="https://www.behance.net/davidghent" target="_blank">BEHANCE</a>, <a href="https://dribbble.com/daveghent" target="_blank">DRIBBBLE</a>, <a href="https://medium.com/@daveghent" target="_blank">MEDIUM</a>, <a href="https://www.instagram.com/canadian.dave/" target="_blank">INSTAGRAM</a>
+			</div>
 		</div>
 	</div>
 </div><!-- emd full[age -->
