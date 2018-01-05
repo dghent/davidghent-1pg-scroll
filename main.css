@@ -94,11 +94,11 @@ a:hover {
 }
 
 #section2 a {
-  color: #FF249A;
+  color: #FF6BBB;
 }
 
 #section2 a:hover {
-  color: #FFADAD;
+  color: #C21974;
 }
 
 #section3 {
@@ -130,14 +130,19 @@ a:hover {
 @media screen and (min-width: 1200px) {
   .text-block {
     margin-left: 40px;
-    width: 80%;
+    width: 75%;
   }
   h1 {
     font-size: 96px;
     line-height: auto;
   }
   a {
-    font-size: 24px;
+
+  }
+  #scroll-1 a, #scroll-2 a, #scroll-3 a, #scroll-4 a {
+    border-bottom: none;
+    display: block;
+    padding: 24px 0;
   }
 }
 
@@ -150,12 +155,9 @@ a:hover {
     font-size: 108px;
     line-height: 148px;
   }
-  a {
-
-  }
   #scroll-1 a, #scroll-2 a, #scroll-3 a, #scroll-4 a, #end-links {
     padding: 48px 0;
-    font-size: 28px;
+    font-size: 18px;
   }
 }
 
@@ -168,7 +170,8 @@ a:hover {
     font-size: 64px;
     line-height: 80px;
   }
-  a {
-    font-size: 24px;
+  #scroll-1 a, #scroll-2 a, #scroll-3 a, #scroll-4 a, #end-links {
+    padding: 48px 0;
+    font-size: 18px;
   }
 }
